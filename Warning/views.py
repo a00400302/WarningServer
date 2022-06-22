@@ -97,19 +97,20 @@ def base64_to_img(bstr, file_path):
 def sendMessage():
     a = PushUser.objects.all()
     for i in a:
-        data = {
-            "userid": 50,
-            "timestamp": 20120701231212,
-            "sign": "4d4844683bc346b32f19e04a1f5711f6",
-            "mobile": i.phone,
-            "content": "尊敬的qq在ww发生ee报警，请尽快赶往现场处理！恢复通气前请先关闭炉具开关！【瓶安卫士】",
-            # "content": "尊敬的"+i.name+",系统发生三轮车识别报警，请在平台查看【宇信科技】",
-            "sendTime": "",
-            "action": "send",
-            "extno": "",
-        }
-        url = "http://112.74.59.69:8088/v2sms.aspx"
-        r = requests.post(url, data=data)
-        print(r.text)
+        if i.enable:
+            data = {
+                "userid": 50,
+                "timestamp": 20120701231212,
+                "sign": "4d4844683bc346b32f19e04a1f5711f6",
+                "mobile": i.phone,
+                "content": "尊敬的qq在ww发生ee报警，请尽快赶往现场处理！恢复通气前请先关闭炉具开关！【瓶安卫士】",
+                # "content": "尊敬的"+i.name+",系统发生三轮车识别报警，请在平台查看【宇信科技】",
+                "sendTime": "",
+                "action": "send",
+                "extno": "",
+            }
+            url = "http://112.74.59.69:8088/v2sms.aspx"
+            r = requests.post(url, data=data)
+            print(r.text)
 
 

@@ -8,6 +8,7 @@ class WarningHistory(models.Model):
 
 class PushUser(models.Model):
     name = models.CharField(max_length=10)
+    enable = models.BooleanField(default=True)
     phone = models.IntegerField()
 
 

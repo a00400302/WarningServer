@@ -1,0 +1,11 @@
+{
+    "python.formatting.provider": "yapf",
+    "window.autoDetectColorScheme": false,
+    "window.closeWhenEmpty": false,
+    "workbench.settings.useSplitJSON": true,
+    "workbench.settings.openDefaultKeybindings": false,
+    "pythonPreview.hideCode": true,
+    "javascript.inlayHints.parameterTypes.enabled": true,
+    "javascript.inlayHints.propertyDeclarationTypes.enabled": true,
+    "javascript.inlayHints.variableTypes.enabled": true
+}
