@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"window.autoDetectColorScheme": false,
+		"window.closeWhenEmpty": false,
+		"workbench.settings.useSplitJSON": true,
+		"workbench.settings.openDefaultKeybindings": false
+	}
+}
