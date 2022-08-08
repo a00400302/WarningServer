@@ -16,4 +16,7 @@ urlpatterns = [
     re_path('changepwd/', views.changepwd),
     re_path('pushsave/', views.pushsave),
     re_path('humanwarning/', views.camerapushsave),
+    re_path('environment/', views.monitorData),
+    re_path('ladata/', views.ladata),
+    re_path('bigDataSearch/', views.bigDataSearch),
 ]

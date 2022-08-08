@@ -12,3 +12,9 @@ class PushUser(models.Model):
     name = models.CharField(max_length=10)
     enable = models.BooleanField(default=True)
     phone = models.IntegerField()
+
+
+class Environmental(models.Model):
+    id = models.AutoField(primary_key=True)
+    time = models.DateTimeField(auto_now_add=True)
+    la = models.FloatField()
